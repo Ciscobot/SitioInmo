@@ -1,0 +1,111 @@
+/* en mi hoja de estilos CSS, debo utilizar la siguiente sintaxis
+elemento, abro llaves {}, dentro de estas llaves indico el par
+Propiedad : Valor, finalizando la regla con (;)
+por ejemplo:
+
+p { 
+  color : red;  color es la propiedad, red es el valor
+  } 
+
+lo que hice fue decirle a CSS que para todo elemento p(parrafo) en mi documento html aplique el color rojo.
+
+no nos olvidemos de referenciar en nuestro documento html, la hoja de estilos CSS:
+Recuerden que la siguiente linea la tengo que declarar en el elemento <head> del documento html.!!!!
+
+<link href="/home/victor/Documentos/Sitios04/programacion web/mi_pagina/CSS/estilos1.css" rel="stylesheet" type="text/css"/>
+
+con href le indico la ruta de mi hoja de estilos a html, es decir, donde se encuentra esa hoja con los estilos que tengo que aplicar a mi pagina.
+
+rel es un atributo, que en un enlace entre dos documentos, describe la relación que mantiene el documento de destino con el documento presente (el que enlaza). 
+
+type le indico el tipo de contenido.
+
+*/
+
+/* en este caso para todas los elementos o etiquetas h1 aplicara un margen de 100 px en la parte superior
+el padding es el relleno alrededor del contenido, con esto le digo que en la parte superior sea de 50px, a los lados de 10px y en la parte superior 50px 
+algunos valores de tamanos nos piden los datos de los 4 lados, por lo general se definen asi:
+
+aplicar a los cuatro lados:
+
+  padding: 1em; o bien padding: auto;
+
+vertical - horizontal 
+ 
+  padding: 5% 10%;
+
+Arriba - horizontal - abajo 
+
+  padding: 1em 2em 2em; 
+
+Arriba - Derecha - abajo - izquierda 
+  
+  padding: 2px 1em 0 1em;
+
+Valores Globales:
+
+  padding: inherit;
+  padding: initial;
+  padding: unset;
+
+*/
+h1 {
+    margin: 100px;
+    padding: 50px 10px 10px 50px;
+    color: #00539f;
+    text-shadow: 3px 3px 1px black;
+    font-size: 60px;
+    text-align: center;
+    background-color: lime;
+  }
+  
+  h2 {
+      background-color: burlywood;
+      color: black;
+  }
+  
+  p {
+    background-color: blanchedalmond;
+    color: blue;
+    width: 500px;
+   
+  
+  }
+  
+  a {
+    background-color: azure;
+    color:black;
+  
+  }
+  
+  html {
+    background-color: #00539f;
+  }
+  
+  
+  body {
+    width: 1000px;
+    margin: 50px auto;
+    background-color: green;
+    padding: 105px 20px 20px 20px;
+    border: 5px solid black;
+  }
+  
+  img {
+    background-repeat: repeat;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .img_1{
+    display:flex;
+    margin: 10 auto;
+    max-width: 100%;
+  }
+  
+  @media (min-width: 600px) and (max-width: 768px) {
+    body {
+      background-color: #de3163;
+    }
+  }
+      

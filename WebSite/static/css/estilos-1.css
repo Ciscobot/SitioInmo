@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Reddit+Mono:wght@200..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url("/static/css/menu.css");
+
+section{
+  max-width: 1200px;
+  height: 600px;
+  margin: 0 auto ;
+  background: skyblue;
+  padding: 0px 100px 200px 100px;
+  
+}
+
+section img {
+  width: 10px;
+  flex-grow: 10;
+  object-fit: cover;
+  transition: 1s ease;
+}
+
+section img:hover{
+  cursor: crosshair;
+  width: 500px;
+}
+
+
+img {
+  background-repeat: no-repeat;
+  display: flex;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.parrafo_cabecera {
+  font-size: 25;
+  font-family: "Josefin Sans", sans-serif;
+  font-style: italic;
+  color:black;
+  background-color: aquamarine;
+  padding-left: 10px;
+  padding-top: 10px;
+
+}
+
+.parrafo_cuerpo {
+  font-size: 25;
+  font-family: "Josefin Sans", sans-serif;
+  font-style: italic;
+  color:bisque;
+  background-color: rgba(100, 50, 0, 0.671);
+  opacity: 0.5;
+  padding-left: 10px;
+  padding-top: 10px;
+
+}
+
+h1{
+  font-family: "Reddit Mono";
+  font-size: 50;
+  padding-left: 10px;
+  padding-top: 0px;
+  font-style: Black;
+  font-weight: 900;
+  font-display: auto;
+  color:whitesmoke;
+}
+
+header {
+  width: 800px;
+  height: 300px;
+  margin: 10 auto;
+  
+}
+
+.imagen_cabecera {
+  /*background-image: url("/static/imagenes/eldo_centro.jpg");*/
+  background-color: rgba(208, 208, 208, 0.671);
+  width: 980px;
+
+}
+
+.imagen_cuerpo{
+  /*background-image: url("/static/images/eldo_2.jpg");*/
+  
+  background-color: black;
+  width: 1200px;
+  margin: 0 auto ;
+  padding: 0px 100px 500px 100px;
+  border: 3px solid salmon;
+}
+
+    
+
+.contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  width: 980px;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+.contenedor1 {
+  display: flex;
+  flex-wrap: wrap;
+  width: 980px;
+  height: 300px;
+  margin: 0 auto;
+  
+}
+
+
+@media only screen and (max-width: 600px) {
+  /* Para tablets */
+  .contenedor {width: 100%;}
+  .contenedor1 {width: 100%;}
+  section{width: 100%;}
+  .imagen_cabecera{width: 100%;}
+  .imagen_cuerpo{width: 100%;}
+  .parrafo_cabecera{width: 100%;}
+  .parrafo_cuerpo{width: 100%;}
+}
+
+@media only screen and (min-width: 600px) {
+  /* Para tablets */
+  .contenedor {width: 100%;}
+  .contenedor1 {width: 100%;}
+  section{width: 100%;}
+  .imagen_cabecera{width: 100%;}
+  .imagen_cuerpo{width: 100%;}
+  .parrafo_cabecera{width: 100%;}
+  .parrafo_cuerpo{width: 100%;}
+}
+
+@media only screen and (min-width: 768px) {
+  /* Para escritorio */
+  .contenedor {width: 100%;}
+  .contenedor1 {width: 100%;}
+  section{width: 100%;}
+  .imagen_cabecera{width: 100%;}
+  .imagen_cuerpo{width: 100%;}
+  .parrafo_cabecera{width: 100%;}
+  .parrafo_cuerpo{width: 100%;}
+}
+
+@media only screen and (min-width: 992px) {
+  .contenedor {width: 100%;}
+  .contenedor1 {width: 100%;}
+  section{width: 100%;}
+  .imagen_cabecera{width: 100%;}
+  .imagen_cuerpo{width: 100%;}
+  .parrafo_cabecera{width: 100%;}
+  .parrafo_cuerpo{width: 100%;}
+}
+
+@media only screen and (min-width: 1200px) {
+  .contenedor {width: 100%;}
+  .contenedor1 {width: 100%;}
+  section{width: 100%;}
+  .imagen_cabecera{width: 100%;}
+  .imagen_cuerpo{width: 100%;}
+  .parrafo_cabecera{width: 100%;}
+  .parrafo_cuerpo{width: 100%;}
+}
