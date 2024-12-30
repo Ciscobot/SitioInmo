@@ -1,0 +1,569 @@
+{% extends 'plantillas/base.html' %}
+
+{% load static %}
+
+{%block content %}
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MARQUEZ &#124; Inmobiliaria</title>
+    <link rel="stylesheet" href="{% static 'css/components.css' %}">
+    <link rel="stylesheet" href="{% static 'css/icons.css' %}">
+    <link rel="stylesheet" href="{% static 'css/responsee.css' %}">
+    <link rel="stylesheet" href="{% static 'owl-carousel/owl.carousel.css' %}">
+    <link rel="stylesheet" href="{% static 'owl-carousel/owl.theme.css' %}">     
+    <link rel="stylesheet" href="{% static 'css/template-style.css' %}">
+    <link href='https://fonts.googleapis.com/css?family=Playfair+Display&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="{% static 'js/jquery-1.8.3.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/jquery-ui.min.js' %}"></script>      
+  </head>
+  
+  <body class="size-1140">
+    <!-- HEADER -->
+    <header role="banner" class="position-absolute">    
+      <!-- Top Navigation -->
+      <nav class="background-transparent background-transparent-hightlight full-width sticky">
+        <div class="s-12 l-2">
+          <a href="{% url 'Home' %}" class="logo">
+            <!-- Logo White Version -->
+            <img class="logo-white" src="{% static 'img/logo-white.png' %}" alt="">
+            <!-- Logo Dark Version -->
+            <img class="logo-dark" src="{% static 'img/logo-dark.png' %}" alt="">
+          </a>
+        </div>
+        <div class="top-nav s-12 l-10">
+          <p class="nav-text"></p>
+          <ul class="right chevron">
+            <li><a href="{% url 'Home' %}">Inicio</a></li>
+            <li><a>Servicios</a>
+              <ul>
+                <li><a>Gestoria Automotor</a>
+                  <ul>
+                    <li><a>Inscripcion Inicial</a></li>
+                    <li><a>Transferencias</a></li>
+                    <li><a>Alta y Baja de Patentes</a></li>
+                  </ul>
+                </li>
+                <li><a>Servicios Inmobiliarios</a>
+                  <ul>
+                    <li><a>Administracion de Alquileres</a></li>
+                    <li><a>Venta de Inmuebles</a></li>
+                    <li><a>Servicio de Mantenimiento</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+           
+            <li><a href = "{% url 'Galeria' %}">Tutti Quanti</a></li>
+            <li><a href="{% url 'Productos' %}">Productos</a></li>
+            <li><a href= "{% url 'SobreNosotros' %}">Sobre Nosotros</a></li>
+            <li><a href="{% url 'Contacto' %}">Contacto</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    
+    <!-- MAIN -->
+    <main role="main">    
+      <!-- Main Header -->
+      <header>
+        <div class="carousel-default owl-carousel carousel-main carousel-nav-white background-dark text-center">
+          <div class="item">
+            <div class="s-12">
+              <img src="{% static 'img/header.jpg' %}" alt="">
+              <div class="carousel-content">
+                <div class="content-center-vertical line">
+                  <div class="margin-top-bottom-80">
+                    <!-- Title -->
+                    <h1 class="text-white margin-bottom-30 text-size-60 text-m-size-30 text-line-height-1">Marquez</h1>
+                    <div class="s-12 m-10 l-8 center"><p class="text-white text-size-14 margin-bottom-40">Somos un grupo joven que se dedica a servicios inmobiliarios, estamos comprometidos con la excelencia en cada uno de nuestros trabajos. Acércate a nosotros. Somos expertos Inmobiliarios. <br> 
+                      Recientemente incorporamos el rubro regaleria, ampliando nuestro portafolio de negocios.
+                    </p></div>
+                    <div class="line">
+                      <div class="s-12 m-12 l-3 center">
+                        
+                      </div>       
+                    </div>  
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>              
+        </div>               
+      </header>
+      
+      <!-- Section 1 -->
+      <section class="section-small-padding background-white text-center"> 
+        <div class="line">
+          <div class="margin">
+            <div class="s-12 m-12 l-4 margin-m-bottom">
+              <div class="padding-2x block-bordered">
+                <i class="icon-sli-folder-alt icon3x text-dark center margin-bottom-30"></i>
+                <h2 class="text-thin">Gestoria Automotor</h2>
+                <p class="margin-bottom-30">Nos encargamos de gestionar la Inscripcion Inicial, realizamos transferencias, alta y baja de Patentes</p>
+                <a class="button button-dark-stroke text-size-12" href="/">QUIERO SABER MAS</a>
+              </div>
+            </div>
+            <div class="s-12 m-12 l-4 margin-m-bottom">
+              <div class="padding-2x block-bordered">
+                <i class="icon-sli-home icon3x text-dark center margin-bottom-30"></i>
+                <h2 class="text-thin">Inmobiliaria</h2>
+                <p class="margin-bottom-30">Administramos tus Alquileres de manera optima, Gestionamos venta de inmuebles. ofrecemos servicio de mantenimiento</p>
+                <a class="button button-dark-stroke text-size-12" href="/">QUIERO SABER MAS</a>
+              </div>
+            </div>
+            <div class="s-12 m-12 l-4 margin-m-bottom">
+              <div class="padding-2x block-bordered">
+                <i class="icon-sli-umbrella icon3x text-dark center margin-bottom-30"></i>
+                <h2 class="text-thin">Tutti Quanti</h2>
+                <p class="margin-bottom-30">incorporamos una seccion de regaleria, bazar, ropa, repuestos, y electrodomesticos encontras de todo!</p>
+                <a class="button button-dark-stroke text-size-12" href="/">QUIERO SABER MAS</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <!-- Section 1 -->
+      <section class="section">
+        <div class="line">
+          <h2 class="text-size-50 text-center">Acerca de Nosotros</h2>
+          <hr class="break-small background-primary break-center">
+        </div>
+        <div class="line">
+          <div class="margin">  
+            <div class="s-12 m-12 l-2">
+              <p class="h1 text-size-30 margin-m-bottom-30 text-primary text-line-height-1 text-right">Marquez<br> Multirubro Inmobiliaria</p>
+            </div>
+            <div class="s-12 m-12 l-5">
+              <p class="text-size-14 margin-m-bottom-30 text-dark"> Somos un grupo de personas dedicadas al servicio Inmobiliario, Gestoria Automotor, entre otros. Nos enfocamos en ofrecer un servicio optimo logrando asi la satisfaccion del cliente en cada trabajo, cada venta, cada gestion. </p>
+            </div>
+            <div class="s-12 m-12 l-5">
+              <p class="text-size-14 text-dark">Recientemente incorporamos un anexo/bazar, donde te ofrecemos ropa, calzados, regalos, electrodomesticos, repuestos y lubricantes, esta seccion inaugurada como Tutti Quanti, refleja todo lo que podemos ofrecerte! te invito a descubrir nuestros servicios y productos. </p>
+            </div>
+          </div>
+        </div>    
+      </section>
+      
+      <!-- Section 2 -->
+      <section class="full-width">
+        <div class="s-12 m-12 l-6">  
+          <img src="{% static 'img/img-12.jpg' %}" alt="">
+        </div>
+        <div class="s-12 m-12 l-6">
+          <div class="padding-2x">
+            <div class="line">
+              <div class="float-left">
+                <i class="icon-sli-briefcase icon3x text-dark"></i>
+              </div>
+              <div class="margin-left-60 margin-bottom-30">
+                <h3 class="text-size-25 margin-bottom-0">Gestion Automotor</h3>
+                <p class="text-dark">Realizamos la inscripcion inicial de tu vehiculo para que no tengas que pasar por tramites largos.<br> Te facilitamos formularios y ofrecemos otros servicios.</p>            
+              </div>
+            </div>
+            
+            <div class="line">
+              <div class="float-left">
+                <i class="icon-sli-support icon3x text-dark"></i>
+              </div>
+              <div class="margin-left-60 margin-bottom-30">
+                <h3 class="text-size-25 margin-bottom-0">Servicios Inmobiliarios</h3>
+                <p class="text-dark">Ofrecemos servicios de Administracion de Alquileres, Compra y Venta de Inmuebles, tasacion y otros servicios.</p>            
+              </div>
+            </div>
+            
+            <div class="line">
+              <div class="float-left">
+                <i class="icon-sli-present icon3x text-dark"></i>
+              </div>
+              <div class="margin-left-60 margin-bottom-30">
+                <h3 class="text-size-25 margin-bottom-0">Regaleria</h3>
+                <p>En nuestra tienda te ofrecemos regalos, entre cosas interesantes para que puedas decorar tu ambiente <br> Tenemos un monton de cosas interesantes para vos y tus seres queridos</p>            
+              </div>
+            </div>
+            
+            <div class="line">
+              <div class="float-left">
+                <i class="icon-sli-basket icon3x text-dark"></i>
+              </div>
+              <div class="margin-left-60 margin-bottom-30">
+                <h3 class="text-size-25 margin-bottom-0">Bazar</h3>
+                <p>Tenemos desde ropa y accesorios hasta electrodomesticos, repuestos y lubricantes! es TUTTI QUANTI! </p>            
+              </div>
+            </div>
+            
+            <div class="line">
+              <div class="float-left">
+                <i class="icon-sli-credit-card icon3x text-dark"></i>
+              </div>
+              <div class="margin-left-60">
+                <h3 class="text-size-25 margin-bottom-0">RapiPago</h3>
+                <p class="text-dark">Podes abonar tus facturas, hacer depositos, en nuestra sucursal te ofrecemos la facilidad que brinda un RapiPago.<br> Ademas, podes encontrar formularios 08, entre otros.</p>            
+              </div>
+            </div> 
+          </div>
+        </div>
+      </section>
+      
+      <!-- Section 4 -->
+      <section class="section-top-padding full-width">
+        <h2 class="text-size-50 text-center">Nuestros Trabajos</h2>
+        <hr class="break-small background-primary break-center"> 
+        <div class="tabs background-primary-hightlight">
+            <div class="tab-item tab-active">
+              <a class="tab-label active-btn">Inmobiliaria</a>
+              <div class="tab-content lightbox-gallery">
+                <div class="s-12 m-6 l-3">
+                  <a class="image-with-hover-overlay image-hover-zoom" href="#">
+                    <div class="image-hover-overlay background-primary"> 
+                      <div class="image-hover-overlay-content text-center padding-2x">
+                        <h2 class="text-thin">Departamento</h2> 
+                        <p>Hermoso departamento para alquilar.</p> 
+                      </div> 
+                    </div> 
+                    <img src="{% static 'img/portfolio/thumb-01.jpg' %}" alt="" title="Portfolio Image 1" />
+                  </a>	
+                </div>
+                <div class="s-12 m-6 l-3">
+                  <a class="image-with-hover-overlay image-hover-zoom" href="#">
+                    <div class="image-hover-overlay background-primary"> 
+                      <div class="image-hover-overlay-content text-center padding-2x">
+                        <h2 class="text-thin">Departamento</h2> 
+                        <p>Oferta Dpto nuevo.</p> 
+                      </div> 
+                    </div> 
+                    <img src="{% static 'img/portfolio/thumb-02.jpg' %}" alt="" title="Portfolio Image 2" />
+                  </a>	
+                </div>
+                <div class="s-12 m-6 l-3">
+                  <a class="image-with-hover-overlay image-hover-zoom" href="#">
+                    <div class="image-hover-overlay background-primary"> 
+                      <div class="image-hover-overlay-content text-center padding-2x">
+                        <h2 class="text-thin">Casa </h2> 
+                        <p>Hermosa casa nueva.</p> 
+                      </div> 
+                    </div> 
+                    <img src="{% static 'img/portfolio/thumb-03.jpg' %}" alt="" title="Portfolio Image 3" />
+                  </a>	
+                </div>
+                <div class="s-12 m-6 l-3">
+                  <a class="image-with-hover-overlay image-hover-zoom" href="#">
+                    <div class="image-hover-overlay background-primary"> 
+                      <div class="image-hover-overlay-content text-center padding-2x">
+                        <h2 class="text-thin">Se alquila</h2> 
+                        <p>Departamento muy accesible en la zona centro.</p> 
+                      </div> 
+                    </div> 
+                    <img src="{% static 'img/portfolio/thumb-04.jpg' %}" alt="" title="Portfolio Image 4" />
+                  </a>	
+                </div>
+                <div class="s-12 m-6 l-3">
+                  <a class="image-with-hover-overlay image-hover-zoom" href="#">
+                    <div class="image-hover-overlay background-primary"> 
+                      <div class="image-hover-overlay-content text-center padding-2x">
+                        <h2 class="text-thin">Se vende</h2> 
+                        <p>Toda Amueblada.</p> 
+                      </div> 
+                    </div> 
+                    <img src="{% static 'img/portfolio/thumb-05.jpg' %}" alt="" title="Portfolio Image 5" />
+                  </a>	
+                </div>
+                <div class="s-12 m-6 l-3">
+                  <a class="image-with-hover-overlay image-hover-zoom" href="#">
+                    <div class="image-hover-overlay background-primary"> 
+                      <div class="image-hover-overlay-content text-center padding-2x">
+                        <h2 class="text-thin">URGENTE se Vende</h2> 
+                        <p>Te ofrecemos pagos accesibles y trato directo.</p> 
+                      </div> 
+                    </div> 
+                    <img src="{% static 'img/portfolio/thumb-06.jpg' %}" alt="" title="Portfolio Image 6" />
+                  </a>	
+                </div>
+                <div class="s-12 m-6 l-3">
+                  <a class="image-with-hover-overlay image-hover-zoom" href="#">
+                    <div class="image-hover-overlay background-primary"> 
+                      <div class="image-hover-overlay-content text-center padding-2x">
+                        <h2 class="text-thin">SE alquila</h2> 
+                        <p>Se alquila departamento, todo incluido. Consultar</p> 
+                      </div> 
+                    </div> 
+                    <img src="{% static 'img/portfolio/thumb-07.jpg' %}" alt="" title="Portfolio Image 7" />
+                  </a>	
+                </div>
+                <div class="s-12 m-6 l-3">
+                  <a class="image-with-hover-overlay image-hover-zoom" href="#">
+                    <div class="image-hover-overlay background-primary"> 
+                      <div class="image-hover-overlay-content text-center padding-2x">
+                        <h2 class="text-thin">Para inauguracion</h2> 
+                        <p>se ofrecen alquileres de departamentos a inaugurar.</p> 
+                      </div> 
+                    </div> 
+                    <img src="{% static 'img/portfolio/thumb-08.jpg' %}" alt="" title="Portfolio Image 8" />
+                  </a>	
+                </div>
+              </div>  
+            </div>
+            <div class="tab-item">
+              <a class="tab-label">Gestoria</a>
+              <div class="tab-content lightbox-gallery">
+                <div class="s-12 m-6 l-3">
+                  <a class="image-with-hover-overlay image-hover-zoom" href="#">
+                    <div class="image-hover-overlay background-primary"> 
+                      <div class="image-hover-overlay-content text-center padding-2x">
+                        <h2 class="text-thin">Inscripcion Inicial</h2> 
+                        <p>Realizamos este tramite por vos.</p> 
+                      </div> 
+                    </div> 
+                    <img src="{% static 'img/portfolio/thumb-09.jpg' %}" alt="" title="Portfolio Image 1" />
+                  </a>	
+                </div>
+                <div class="s-12 m-6 l-3">
+                  <a class="image-with-hover-overlay image-hover-zoom" href="#">
+                    <div class="image-hover-overlay background-primary"> 
+                      <div class="image-hover-overlay-content text-center padding-2x">
+                        <h2 class="text-thin">Transferencias</h2> 
+                        <p>Realizamos este tramite por vos.</p> 
+                      </div> 
+                    </div> 
+                    <img src="{% static 'img/portfolio/thumb-10.jpg' %}" alt="" title="Portfolio Image 2" />
+                  </a>	
+                </div>
+                <div class="s-12 m-6 l-3">
+                  <a class="image-with-hover-overlay image-hover-zoom" href="#">
+                    <div class="image-hover-overlay background-primary"> 
+                      <div class="image-hover-overlay-content text-center padding-2x">
+                        <h2 class="text-thin">Alta y Baja de Patentes</h2> 
+                        <p>Realizamos este tramite por vos.</p> 
+                      </div> 
+                    </div> 
+                    <img src="{% static 'img/portfolio/thumb-11.jpg' %}" alt="" title="Portfolio Image 3" />
+                  </a>	
+                </div>
+                <div class="s-12 m-6 l-3">
+                  <a class="image-with-hover-overlay image-hover-zoom" href="#">
+                    <div class="image-hover-overlay background-primary"> 
+                      <div class="image-hover-overlay-content text-center padding-2x">
+                        <h2 class="text-thin">Compra y Venta de Vehiculos</h2> 
+                        <p>Realizamos este tramite por vos.</p> 
+                      </div> 
+                    </div> 
+                    <img src="{% static 'img/portfolio/thumb-12.jpg' %}" alt="" title="Portfolio Image 4" />
+                  </a>	
+                </div>
+                <div class="s-12 m-6 l-3">
+                  <a class="image-with-hover-overlay image-hover-zoom" href="#">
+                    <div class="image-hover-overlay background-primary"> 
+                      <div class="image-hover-overlay-content text-center padding-2x">
+                        <h2 class="text-thin">Venta de Formularios</h2> 
+                        <p>Formularios 08.</p> 
+                      </div> 
+                    </div> 
+                    <img src="{% static 'img/portfolio/thumb-13.jpg' %}" alt="" title="Portfolio Image 5" />
+                  </a>	
+                </div>
+                <div class="s-12 m-6 l-3">
+                  <a class="image-with-hover-overlay image-hover-zoom" href="#">
+                    <div class="image-hover-overlay background-primary"> 
+                      <div class="image-hover-overlay-content text-center padding-2x">
+                        <h2 class="text-thin">Pago Patentes</h2> 
+                        <p>Realizamos este tramite por vos.</p> 
+                      </div> 
+                    </div> 
+                    <img src="{% static 'img/portfolio/thumb-14.jpg' %}" alt="" title="Portfolio Image 6" />
+                  </a>	
+                </div>
+                <div class="s-12 m-6 l-3">
+                  <a class="image-with-hover-overlay image-hover-zoom" href="#">
+                    <div class="image-hover-overlay background-primary"> 
+                      <div class="image-hover-overlay-content text-center padding-2x">
+                        <h2 class="text-thin">Gestion de Documentacion</h2> 
+                        <p>Realizamos este tramite por vos.</p> 
+                      </div> 
+                    </div> 
+                    <img src="{% static 'img/portfolio/thumb-14.jpg' %}" alt="" title="Portfolio Image 7" />
+                  </a>	
+                </div>
+                <div class="s-12 m-6 l-3">
+                  <a class="image-with-hover-overlay image-hover-zoom" href="#">
+                    <div class="image-hover-overlay background-primary"> 
+                      <div class="image-hover-overlay-content text-center padding-2x">
+                        <h2 class="text-thin">Gestion Documentacion</h2> 
+                        <p>Realizamos este tramite por vos.</p> 
+                      </div> 
+                    </div> 
+                    <img src="{% static 'img/portfolio/thumb-13.jpg' %}" alt="" title="Portfolio Image 8" />
+                  </a>	
+                </div>
+              </div>  
+            </div>
+            <div class="tab-item">
+              <a class="tab-label">Tutti Quanti</a>
+              <div class="tab-content lightbox-gallery">
+                <div class="s-12 m-6 l-3">
+                  <a class="image-with-hover-overlay image-hover-zoom" href="#">
+                    <div class="image-hover-overlay background-primary"> 
+                      <div class="image-hover-overlay-content text-center padding-2x">
+                        <h2 class="text-thin">Bazar</h2> 
+                        <p>Te Ofrecemos el mejor bazar de la ciudad.</p> 
+                      </div> 
+                    </div> 
+                    <img src="{% static 'img/portfolio/thumb-15.jpg' %}" alt="" title="Portfolio Image 9" />
+                  </a>	
+                </div>
+                <div class="s-12 m-6 l-3">
+                  <a class="image-with-hover-overlay image-hover-zoom" href="#">
+                    <div class="image-hover-overlay background-primary"> 
+                      <div class="image-hover-overlay-content text-center padding-2x">
+                        <h2 class="text-thin">Ropa</h2> 
+                        <p>Te ofrecemos ropa.</p> 
+                      </div> 
+                    </div> 
+                    <img src="{% static 'img/portfolio/thumb-16.jpg' %}" alt="" title="Portfolio Image 10" />
+                  </a>	
+                </div>
+                <div class="s-12 m-6 l-3">
+                  <a class="image-with-hover-overlay image-hover-zoom" href="#">
+                    <div class="image-hover-overlay background-primary"> 
+                      <div class="image-hover-overlay-content text-center padding-2x">
+                        <h2 class="text-thin">Electrodomesticos</h2> 
+                        <p>Tambien podemos ofrecerte Electrodomesticos.</p> 
+                      </div> 
+                    </div> 
+                    <img src="{% static 'img/portfolio/thumb-17.jpg' %}" alt="" title="Portfolio Image 11" />
+                  </a>	
+                </div>
+                <div class="s-12 m-6 l-3">
+                  <a class="image-with-hover-overlay image-hover-zoom" href="#">
+                    <div class="image-hover-overlay background-primary"> 
+                      <div class="image-hover-overlay-content text-center padding-2x">
+                        <h2 class="text-thin">Regaleria</h2> 
+                        <p>Tenemos una Regaleria muy completa</p> 
+                      </div> 
+                    </div> 
+                    <img src="{% static 'img/portfolio/thumb-18.jpg' %}" alt="" title="Portfolio Image 12" />
+                  </a>	
+                </div>
+                <div class="s-12 m-6 l-3">
+                  <a class="image-with-hover-overlay image-hover-zoom" href="#">
+                    <div class="image-hover-overlay background-primary"> 
+                      <div class="image-hover-overlay-content text-center padding-2x">
+                        <h2 class="text-thin">Accesorios</h2> 
+                        <p>Te ofrecemos mas</p> 
+                      </div> 
+                    </div> 
+                    <img src="{% static 'img/portfolio/thumb-19.jpg' %}" alt="" title="Portfolio Image 13" />
+                  </a>	
+                </div>
+                <div class="s-12 m-6 l-3">
+                  <a class="image-with-hover-overlay image-hover-zoom" href="#">
+                    <div class="image-hover-overlay background-primary"> 
+                      <div class="image-hover-overlay-content text-center padding-2x">
+                        <h2 class="text-thin">Lubricantes y Repuestos</h2> 
+                        <p>Todo lo que necesitas para tu moto</p> 
+                      </div> 
+                    </div> 
+                    <img src="{% static 'img/portfolio/thumb-20.jpg' %}" alt="" title="Portfolio Image 14" />
+                  </a>	
+                </div>
+                <div class="s-12 m-6 l-3">
+                  <a class="image-with-hover-overlay image-hover-zoom" href="#">
+                    <div class="image-hover-overlay background-primary"> 
+                      <div class="image-hover-overlay-content text-center padding-2x">
+                        <h2 class="text-thin">Lubricantes y Repuestos</h2> 
+                        <p>Todo lo que necesitas para tu moto.</p> 
+                      </div> 
+                    </div> 
+                    <img src="{% static 'img/portfolio/thumb-20.jpg' %}" alt="" title="Portfolio Image 15" />
+                  </a>	
+                </div>
+                <div class="s-12 m-6 l-3">
+                  <a class="image-with-hover-overlay image-hover-zoom" href="#">
+                    <div class="image-hover-overlay background-primary"> 
+                      <div class="image-hover-overlay-content text-center padding-2x">
+                        <h2 class="text-thin">Muchisimo MAS</h2> 
+                        <p>Veni a conocernos</p> 
+                      </div> 
+                    </div> 
+                    <img src="{% static 'img/portfolio/thumb-17.jpg' %}" alt="" title="Portfolio Image 16" />
+                  </a>	
+                </div>
+              </div>  
+            </div>
+         </div>
+      </section>
+      
+      
+      
+    <!-- FOOTER -->
+    <footer>
+      <!-- Contact Us -->
+      <div class="background-primary padding text-center">
+        <p class="h1"></p>                                                                        
+      </div>
+      
+      <!-- Main Footer -->
+      <section class="background-dark full-width">
+        <!-- Map -->
+        <div class="s-12 m-12 l-6 margin-m-bottom-2x">
+          <div >
+            <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d415.3003172827362!2d-54.60031134651525!3d-26.40869154742356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjbCsDI0JzMwLjgiUyA1NMKwMzYnMDAuMyJX!5e1!3m2!1ses-419!2sar!4v1735511443281!5m2!1ses-419!2sar" width="100%" height="450" frameborder="0" style="border:0"></iframe>
+          </div>
+        </div>
+        
+        <!-- Collumn 2 -->
+        <div class="s-12 m-12 l-6 margin-m-bottom-2x">
+          <div class="padding-2x">
+            <div class="line">              
+              <div class="float-left">
+                  <i class="icon-sli-location-pin text-primary icon3x"></i>
+                </div>
+                <div class="margin-left-70 margin-bottom-30">
+                  <h3 class="margin-bottom-0">Encontranos en</h3>
+                  <p>Avenida San Martin 2288 Km. 10<br>
+                     Eldorado / Misiones / Argentina
+                  </p>               
+                </div>
+                <div class="float-left">
+                  <i class="icon-sli-envelope text-primary icon3x"></i>
+                </div>
+                <div class="margin-left-70 margin-bottom-30">
+                  <h3 class="margin-bottom-0">Correo Electronico</h3>
+                  <p>gestoria@marquez.com.ar<br>
+                     inmobiliaria@marquez.com.ar
+                  </p>              
+                </div>
+                <div class="float-left">
+                  <i class="icon-sli-screen-smartphone text-primary icon3x"></i>
+                </div>
+                <div class="margin-left-70">
+                  <h3 class="margin-bottom-0">Telefono </h3>
+                  <a href = "https://api.whatsapp.com/send?phone=543751316672">+54 9 3751-332211 </a> <br>
+                     <a>+54 9 3751-447788</a><br>
+                     <a>+54 9 3751-112233 </a>         
+                </div>
+            </div>
+          </div>
+        </div>  
+      </section>
+      <hr class="break margin-top-bottom-0" style="border-color: rgba(0, 38, 51, 0.80);">
+      
+      <!-- Bottom Footer -->
+      <section class="padding background-dark full-width">
+        <div class="s-12 l-6">
+          <p class="text-size-12">Copyright 2025, BugCompany</p>
+          <p class="text-size-12">Todos los Derechos Reservados</p>
+        </div>
+        <div class="s-12 l-6">
+          <a class="right text-size-12" title="Responsee - lightweight responsive framework">Diseño y Codigo <br> por Victor Cano</a>
+        </div>
+      </section>
+    </footer>
+    <script type="text/javascript" src="{% static 'js/responsee.js' %}"></script>
+    <script type="text/javascript" src="{% static 'owl-carousel/owl.carousel.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/template-scripts.js' %}"></script>
+  </body>
+</html>
+{% endblock %}

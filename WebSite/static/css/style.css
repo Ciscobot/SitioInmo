@@ -1,0 +1,82 @@
+.cabecera{
+    width: 100%;
+    margin: 5px, 5px, 5px, 5px;
+    float: left;
+    background-color: lightskyblue;
+}
+
+.contenedor1 {
+    float: left;
+    height: 1200px;
+    width: 18%;
+    background-color: aqua;
+    margin-top: 5px;
+    
+}
+
+.contenedor {
+    width: 82%;
+    float: left;
+    background-color: cadetblue;
+    margin-top: 5px;
+    margin-bottom: 50px;
+    
+}
+
+
+.box{
+    float: left;
+    width: 300px;
+    height: 200px;
+    background-color: darkgray;
+    margin: 10px;
+}
+
+.TituloPrincipal{
+    font-family: "Times New Roman", Times, serif;
+    color: blue;
+    font-size: 50px;
+    text-align: center;
+}
+
+.TextoSecundario{
+    font-family: "Reddit Mono";
+    font-size: 20px;
+}
+  
+.img_1{
+    display:block;
+    width: 100%;
+    height: 100%;
+}
+  
+@media only screen and (min-width: 200px) and (max-width: 600px){
+    /* Para tablets */
+    .cabecera{width: 100%;}
+    .contenedor {width: 100%;}
+    .contenedor1 {width: 100%;
+    height: auto;}
+}
+  
+  
+@media only screen and (min-width: 600px) and (max-width: 768px){
+    /* Para escritorio */
+    .cabecera{width: 100%;}
+    .contenedor {width: 100%;}
+    .contenedor1 {width: 100%;
+    height: auto;}
+}
+  
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    .cabecera{width: 100%;}
+    .contenedor {width: 100%;}
+    .contenedor1 {width: 100%;
+    height: auto;}
+  }
+  
+@media only screen and (min-width: 992px) and (max-width: 100%) {
+    .cabecera{width: 100%;}
+    .contenedor {width: 100%;}
+    .contenedor1 {width: 100%;
+    height: auto;}
+}

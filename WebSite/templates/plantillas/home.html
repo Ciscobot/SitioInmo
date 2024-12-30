@@ -4,18 +4,15 @@
 
 {%block content %}
     <head >
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-        <link rel="stylesheet" href="{% static 'css/estilos-1.css' %}">
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
         <link rel="stylesheet" href="{% static 'css/menu.css' %}">
         <meta charset="UTF-8">
-
     </head>
-    <section class="contenedor1">
-    <header >
-        <h1> Marquez Inmobiliaria  Regaleria </h1>
-        
-        <nav class="menu">
+    
+    <section class = "cabecera">
+    <header>
+        <h1 class = "TituloPrincipal"> Marquez </h1>
+        <nav class = "menu">
             <a href = "{% url 'QuienesSomos' %}"> Quienes Somos </a> |
             <a href = "{% url 'Inmobiliaria' %}"> Inmobiliaria </a> |
             <a href = "{% url 'Regaleria' %}"> Regaleria </a> |
@@ -23,23 +20,42 @@
         </nav>
     </header>
     </section>
-    <body>  
-<section class="contenedor">
-    <p class="parrafo_cuerpo">  ACA IRIA UN CUADRO CON IMAGENES Y DETALLES DE PROXIMOS LANZAMIENTOS DE INMUEBLES/REGALOS, ADEMAS AL DAR CLICK NOS REDIRECCIONA A OTRA VENTANA CON EL DETALLE DE ITEM  </p>
-    <img src="/static/imagenes/ciu_1.jpg"></img>
-    <img src="/static/imagenes/ciu_2.jpg"></img>
-    <img src="/static/imagenes/ciu_3.jpg"></img>
-    <img src="/static/imagenes/rega_1.jpg"></img>
-    <img src="/static/imagenes/rega_2.jpg"></img>
-    <img src="/static/imagenes/rega_3.jpg"></img>
-</section>
-<section class="contenedor">
-    <p class="parrafo_cuerpo"> ACA IRIA UN CUADRO CON LOS INMUEBLES ARTICULOS RECIEN LLEGADOS </p>
-</section>
+<body>
+    <section class="contenedor1"> soy el lateral </section>
+    
+    <section class = "contenedor">
+        <div class = "box"> 
+            <img class = "img_1", src="/static/imagenes/ciu_1.jpg"></img>
+        </div>
+        <div class="box">
+            <img class = "img_1", src = "/static/imagenes/ciu_2.jpg"></img>
+        </div>
+        <div class="box">
+            <img class = "img_1", src = "/static/imagenes/ciu_3.jpg"></img>
+        </div>
+        
+    </section>
 
-<section class="contenedor">
-    <p class="parrafo_cuerpo"> ACA IRIA UN CUADRO CON IMAGENES Y DETALLES DE LOS PRODUCTOS / INMUEBLES MAS DESTACADOS </p>
-</section>
+    <div class = "contenedor">
+        <p class = "parrafo_cuerpo"> ACA IRIA UN CUADRO CON LOS INMUEBLES ARTICULOS RECIEN LLEGADOS </p>
+        
+        <div class = "box"> Hola es otro box </div>
+        
+    </div>
+
+    <div class = "contenedor">
+        <p class = "parrafo_cuerpo"> ACA IRIA UN CUADRO CON IMAGENES Y DETALLES DE LOS PRODUCTOS / INMUEBLES MAS DESTACADOS </p>
+        
+        <div class="box"> Hola es otro box</div>
+        
+    </div>
 </body>
+
 {% endblock %}
 
+<img src="/static/imagenes/ciu_1.jpg"></img>
+<img src="/static/imagenes/ciu_2.jpg"></img>
+<img src="/static/imagenes/ciu_3.jpg"></img>
+<img src="/static/imagenes/rega_1.jpg"></img>
+<img src="/static/imagenes/rega_2.jpg"></img>
+<img src="/static/imagenes/rega_3.jpg"></img>

@@ -1,0 +1,254 @@
+{% extends 'plantillas/base.html' %}
+
+{% load static %}
+
+{%block content %}
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Marquez &#124; Contactenos </title>
+    <link rel="stylesheet" href="{% static 'css/components.css' %}">
+    <link rel="stylesheet" href="{% static 'css/icons.css' %}">
+    <link rel="stylesheet" href="{% static 'css/responsee.css' %}">
+    <link rel="stylesheet" href="{% static 'owl-carousel/owl.carousel.css' %}">
+    <link rel="stylesheet" href="{% static 'owl-carousel/owl.theme.css' %}">     
+    <link rel="stylesheet" href="{% static 'css/template-style.css' %}">
+    <link href='https://fonts.googleapis.com/css?family=Playfair+Display&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="{% static 'js/jquery-1.8.3.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/jquery-ui.min.js' %}"></script>  
+  </head>
+  
+  <body class="size-1140">
+    <!-- HEADER -->
+    <header role="banner" class="position-absolute">    
+      <!-- Top Navigation -->
+      <nav class="background-transparent background-transparent-hightlight full-width sticky">
+        <div class="s-12 l-2">
+          <a href="{% url 'Home' %}" class="logo">
+            <!-- Logo White Version -->
+            <img class="logo-white" src="{% static 'img/logo-white.png' %}" alt="">
+            <!-- Logo Dark Version -->
+            <img class="logo-dark" src="{% static 'img/logo-dark.png' %}" alt="">
+          </a>
+        </div>
+        <div class="top-nav s-12 l-10">
+          <p class="nav-text"></p>
+          <ul class="right chevron">
+            <li><a href="{% url 'Home' %}">Inicio</a></li>
+            <li><a>Servicios</a>
+              <ul>
+                <li><a>Gestoria Automotor</a>
+                  <ul>
+                    <li><a>Inscripcion Inicial</a></li>
+                    <li><a>Transferencias</a></li>
+                    <li><a>Alta y Baja de Patentes</a></li>
+                  </ul>
+                </li>
+                <li><a>Servicios Inmobiliarios</a>
+                  <ul>
+                    <li><a>Administracion de Alquileres</a></li>
+                    <li><a>Venta de Inmuebles</a></li>
+                    <li><a>Servicio de Mantenimiento</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li><a href = "{% url 'Galeria' %}">Tutti Quanti</a></li>
+            <li><a href="{% url 'Productos' %}">Productos</a></li>
+            <li><a href= "{% url 'SobreNosotros' %}">Sobre Nosotros</a></li>
+            <li><a href="{% url 'Contacto' %}">Contacto</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    
+    <!-- MAIN -->
+    <main role="main">
+      <!-- Content -->
+      <article>
+        <header class="section background-dark">
+          <div class="line">        
+            <h1 class="text-white margin-top-bottom-40 text-size-60 text-line-height-1">Contactenos</h1>
+            <p class="margin-bottom-0 text-size-16">Te presentamos nuestros distintos canales de comunicacion para que puedas encontrarnos.<br>
+            Te responderemos a la brevedad.</p>
+          </div>  
+        </header>
+        <div class="section background-white"> 
+          <div class="line margin-bottom-60">
+            <div class="margin">
+              <div class="s-12 m-12 l-4 margin-m-bottom">
+                <div class="padding-2x block-bordered border-radius">
+                  <div class="float-left hide-s">
+                    <i class="icon-sli-location-pin icon3x text-primary"></i>
+                  </div>
+                <div class="margin-left-70 margin-s-left-0 margin-bottom">
+                  <h3 class="margin-bottom-0">Direccion</h3>
+                  <p>Av. San Martin 2288 Km. 10<br>
+                     Eldorado / Misiones / Argentina
+                  </p>               
+                </div>
+                </div>
+              </div>
+              <div class="s-12 m-12 l-4 margin-m-bottom">
+                <div class="padding-2x block-bordered border-radius">
+                  <div class="float-left hide-s">
+                    <i class="icon-sli-envelope icon3x text-primary"></i>
+                  </div>
+                  <div class="margin-left-70 margin-s-left-0 margin-bottom">
+                    <h3 class="margin-bottom-0">Correo Electronico</h3>
+                    <p>gestoria@marquez.com.ar<br>
+                      inmobiliaria@marquez.com.ar
+                    </p>              
+                  </div>
+                </div>
+              </div>
+              <div class="s-12 m-12 l-4 margin-m-bottom">
+                <div class="padding-2x block-bordered border-radius">
+                  <div class="float-left hide-s">
+                    <i class="icon-sli-phone icon3x text-primary"></i>
+                  </div>
+                  <div class="margin-left-70 margin-s-left-0">
+                    <h3 class="margin-bottom-0">Telefono</h3>
+                    <a href = "https://api.whatsapp.com/send?phone=543751316672">+54 9 3751-332211 </a> <br>
+                     <a>+54 9 3751-447788</a><br>
+                     <a>+54 9 3751-112233 </a>              
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="line">
+            <div class="margin">
+              <!-- Contact Form -->
+              <div class="s-12 m-12 l-6">
+                <h2 class="margin-bottom-10">Dejanos un Mensaje</h2>
+                <form name="contactForm" class="customform" method="post">
+                  <div class="line">
+                    <div class="margin">
+                      <div class="s-12 m-12 l-6">
+                        <input name="email" class="required email" placeholder="Tu Correo Electronico" title="Your e-mail" type="text"/>
+                        <p class="email-error form-error">Ingresa un Correo Electronico de contacto.</p>
+                      </div>
+                      <div class="s-12 m-12 l-6">
+                        <input name="name" class="name" placeholder="Tu Nombre" title="Your name" type="text" />
+                        <p class="name-error form-error">Ingresa tu Nombre.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="s-12"> 
+                    <input name="subject" class="subject" placeholder="Motivo del Mensaje" title="Subject" type="text" />
+                    <p class="subject-error form-error">Motivo del Mensaje.</p>
+                  </div>
+                  <div class="s-12">
+                    <textarea name="message" class="required message" placeholder="Tu Mensaje" rows="3"></textarea>
+                    <p class="message-error form-error">Tu Mensaje.</p>
+                  </div>
+                  <div class="s-12"><button class="s-12 submit-form button background-primary text-white" type="submit">Enviar Mensaje</button></div>
+                </form>
+              </div>
+              <div class="s-12 m-12 l-4">
+                <h2 class="margin-bottom-10">Horarios de Atencion</h2>
+                <div class="s-6">
+                  <p class="text-size-16">
+                  Lunes<br>
+                  Martes<br>
+                  Miercoles<br>
+                  Jueves<br>
+                  Viernes<br>
+                  Sabado<br>
+                  Domingo
+                  </p>
+                </div>
+                <div class="s-6">
+                  <p class="text-size-16 text-strong">
+                  8:00-12:00 15:00-19:00<br>
+                  8.00-12.00 15:00-19:00<br>
+                  8.00-12.00 15:00-19:00<br>
+                  8.00-12.00 15:00-19:00<br>
+                  8.00-12.00 13:30-17:00<br>
+                  Cerrado<br>
+                  Cerrado
+                  </p>
+                </div>
+
+              </div>
+            </div>    
+          </div>  
+        </div> 
+      </article>
+    </main>
+    
+    <!-- FOOTER -->
+    <footer>
+      <!-- Contact Us -->
+      <div class="background-primary padding text-center">
+        <p class="h1"></p>                                                                        
+      </div>
+      
+      <!-- Main Footer -->
+      <section class="background-dark full-width">
+        <!-- Map -->
+        <div class="s-12 m-12 l-6 margin-m-bottom-2x">
+          <div >
+            <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d415.3003172827362!2d-54.60031134651525!3d-26.40869154742356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjbCsDI0JzMwLjgiUyA1NMKwMzYnMDAuMyJX!5e1!3m2!1ses-419!2sar!4v1735511443281!5m2!1ses-419!2sar" width="100%" height="450" frameborder="0" style="border:0"></iframe>
+          </div>
+        </div>
+        
+        <!-- Collumn 2 -->
+        <div class="s-12 m-12 l-6 margin-m-bottom-2x">
+          <div class="padding-2x">
+            <div class="line">              
+              <div class="float-left">
+                  <i class="icon-sli-location-pin text-primary icon3x"></i>
+                </div>
+                <div class="margin-left-70 margin-bottom-30">
+                  <h3 class="margin-bottom-0">Encontranos en</h3>
+                  <p>Avenida San Martin 2288 Km. 10<br>
+                     Eldorado / Misiones / Argentina
+                  </p>               
+                </div>
+                <div class="float-left">
+                  <i class="icon-sli-envelope text-primary icon3x"></i>
+                </div>
+                <div class="margin-left-70 margin-bottom-30">
+                  <h3 class="margin-bottom-0">Correo Electronico</h3>
+                  <p>gestoria@marquez.com.ar<br>
+                     inmobiliaria@marquez.com.ar
+                  </p>              
+                </div>
+                <div class="float-left">
+                  <i class="icon-sli-screen-smartphone text-primary icon3x"></i>
+                </div>
+                <div class="margin-left-70">
+                  <h3 class="margin-bottom-0">Telefono </h3>
+                  <a href = "https://api.whatsapp.com/send?phone=543751316672">+54 9 3751-332211 </a> <br>
+                     <a>+54 9 3751-447788</a><br>
+                     <a>+54 9 3751-112233 </a>         
+                </div>
+            </div>
+          </div>
+        </div>  
+      </section>
+      <hr class="break margin-top-bottom-0" style="border-color: rgba(0, 38, 51, 0.80);">
+      
+      <!-- Bottom Footer -->
+      <section class="padding background-dark full-width">
+        <div class="s-12 l-6">
+          <p class="text-size-12">Copyright 2025, BugCompany</p>
+          <p class="text-size-12">Todos los Derechos Reservados</p>
+        </div>
+        <div class="s-12 l-6">
+          <a class="right text-size-12" title="Responsee - lightweight responsive framework">Diseño y Codigo <br> por Victor Cano</a>
+        </div>
+      </section>
+    </footer>
+    <script type="text/javascript" src="{% static 'js/responsee.js' %}"></script>
+    <script type="text/javascript" src="{% static 'owl-carousel/owl.carousel.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/template-scripts.js' %}"></script>
+  </body>
+</html>
+{% endblock %}
